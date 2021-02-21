@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" type="text/css" href="./default.css" />
+  <link rel="stylesheet" type="text/css" href="default.css" />
+
+  <link id="theme-style" rel="stylesheet" type="text/css" href="" />
 </head>
 
 <body>
@@ -20,7 +22,6 @@
       <div class="greeting-wrapper">
         <h1>Hi, I'm Samkit Sheth</h1>
       </div>
-
       <div class="intro-wrapper">
         <div class="nav-wrapper">
           <div class="dots-wrapper">
@@ -29,27 +30,24 @@
             <div id="dot-3" class="browser-dot"></div>
           </div>
           <ul id="navigation">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a target="_blank" href="mailto:samkitsheth95@gmail.com">Contact</a></li>
           </ul>
         </div>
         <div class="left-column">
           <img id="profile_pic" src="./images/babyYoda.jpg" />
           <h5 style="text-align: center; line-height: 0">
-            personalize Theme
+            Personalize Theme
           </h5>
           <div class="theme-options-wrapper">
-            <div id="light-mode" class="theme-dot"></div>
-            <div id="blue-mode" class="theme-dot"></div>
-            <div id="green-mode" class="theme-dot"></div>
-            <div id="purple-mode" class="theme-dot"></div>
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
           </div>
           <p id="settings-note">
             *Theme settings will be saved for<br />your next visit
           </p>
         </div>
-
         <div class="right-column">
           <div id="preview-shadow">
             <div id="preview">
@@ -57,8 +55,7 @@
               <div id="corner-tr" class="corner"></div>
               <h3>What I Do</h3>
               <p>
-                I'm a full stack developer building scalable web apps. i am
-                currently pursueing my master's from sjsu.
+                I'm a Full Stack Web Developer building scalable Web Apps.
               </p>
               <div id="corner-br" class="corner"></div>
               <div id="corner-bl" class="corner"></div>
@@ -74,100 +71,349 @@
         <div class="about-me">
           <h4>More about me</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            imperdiet eu velit tincidunt porta
+            👋, Thank you for visiting my website. Do click on the dots to Personalize the website.😉
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            imperdiet eu velit tincidunt porta. Vestibulum et ipsum mollis,
-            viverra metus sit amet, dignissim erat. Vivamus a ornare mauris.
-            Donec mattis rutrum sem at faucibus. Suspendisse iaculis vitae
-            tellus id gravida. Proin blandit faucibus nibh, id vulputate ante
-            semper quis.
+            I have one year of work experience 👨‍💻 as a software developer where I developed web applications using
+            React,
+            Node, SQL. I am interested in developing applications that are used by millions of users.
+            I like to find the most optimal solution to a given problem, always learning the better approach and the
+            best practices.
           </p>
-
+          <p>
+            When I am not working I like to make delicious food 🍛, play computer games(MOBA - Dota 2) 🎮 and read books
+            📚.
+          </p>
           <hr />
-          <h4>Top expertise</h4>
+          <h4>Technical Skills</h4>
           <p>
-            Full stack developer
+            Check out my resume
             <a target="_blank" href="resume.pdf">Download Resume</a>
           </p>
           <div id="skills">
             <ul>
               <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
+              <li>Javascript</li>
+              <li>React Redux</li>
+              <li>Java</li>
+              <li>Git</li>
+              <li>CSS</li>
             </ul>
             <ul>
-              <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
-              <li>Python</li>
+              <li>NodeJs</li>
+              <li>MySql</li>
+              <li>GraphQL</li>
+              <li>Docker</li>
+              <li>HTML</li>
+              <li>AWS</li>
             </ul>
           </div>
         </div>
         <div class="social-links">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            imperdiet eu velit tincidunt porta. Vestibulum et ipsum mollis,
-            viverra metus sit amet, dignissim erat. Vivamus a ornare mauris.
-            Donec mattis rutrum sem at faucibus. Suspendisse iaculis vitae
-            tellus id gravida. Proin blandit faucibus nibh, id vulputate ante
-            semper quis.
-          </p>
+          <div>
+            <h4>Education</h4>
+            <div class="college-master">
+              <div class="college-date">
+                <h6 class="college-name">San Jose State University, USA</h6>
+                <h6 class="college-name">Aug 2019 - May 2021</h6>
+              </div>
+              <span>Master of Science in Software Engineering</span>
+            </div>
+            <div>
+              <div class="college-date">
+                <h6 class="college-name">C U Shah University, India</h6>
+                <h6 class="college-name">July 2014 - May 2018</h6>
+              </div>
+              <span>Bachelor of Technology in Computer Engineering</span>
+            </div>
+            <hr class="edu-line" />
+          </div>
+
+          <div>
+            <h4>Work Experience</h4>
+            <div class="college-date">
+              <h6 class="college-name">Saral Information Technologies</h6>
+              <h6 class="college-name">May 2018 - June 2019</h6>
+            </div>
+            <h6 class="college-name" style="font-size: 14px;">Software Developer</h6>
+            <ul>
+              <li class="companyli">
+                Developed a trading platform for brokerage firms.
+                Implemented REST APIs in Node.js for Radar(real-time
+                price scanner), real time market movement and basket orders.
+              </li>
+              <li class="companyli">
+                Worked on developing an analytics dashboard to show clients and broker the performance of their stock
+                based on various metrics.
+                Utilized React and Recharts to develop interactive graphs.
+              </li>
+            </ul>
+            <hr class="edu-line" />
+          </div>
+          <div class="social-svg">
+            <a target="_blank" href="https://twitter.com/samkit_sheth">
+              <svg class="social-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg></a>
+            <a target="_blank" href="https://github.com/samkitsheth95">
+              <svg class="social-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+              </svg>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/samkit-sheth">
+              <svg class="social-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+              </svg>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
   <section class="s1">
     <div class="main-container">
-      <h3>Some of my project</h3>
+      <h3 class="protfolioHead">Some of my project</h3>
       <div class="post-wrapper">
         <div>
           <div class="post">
-            <img class="thumbnail" src="./images/babyYoda.jpg" />
+            <img class="thumbnail" src="/images/archiveIT.jpg" />
             <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a senternj.vdfnjvksdfv</p>
-              <a href="#">jkodregt</a>
+              <h6 class="post-title">Archive - IT</h6>
+              <p class="post-intro">
+                Built a storage solution web application that lets users store and retrieve their data like google
+                drive.
+                Users can archive their uploaded data reducing their storage cost. Added support for organizations with
+                access control.
+                Dockerized the entire application can be deployed by a docker-compose file.
+              </p>
+              <div>
+                <a target="_blank" href="http://bit.ly/ArchiveIT">Watch demo video</a>
+              </div>
+              <br />
+              <div class="pill">React-Redux</div>
+              <div class="pill">Django</div>
+              <div class="pill">MySql</div>
+              <div class="pill">Material UI</div>
+              <div class="pill">Stripe</div>
+              <div class="pill">Docker</div>
+              <div class="pill">CSS</div>
+              <div class="pill">HTML</div>
             </div>
           </div>
         </div>
         <div>
           <div class="post">
-            <img class="thumbnail" src="./images/babyYoda.jpg" />
+            <img class="thumbnail" src="/images/zipcar.jpg" />
             <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a senternj.vdfnjvksdfv</p>
-              <a href="#">jkodregt</a>
+              <h6 class="post-title">Zipcar Prototype</h6>
+              <p class="post-intro">
+                Developed a Zipcar like application with all the primary functionality and administrator dashboard using
+                MERN stack.
+                Tested the application using Jmeter, Chai, Mocha and Enzyme, dockerized the application and deployed it
+                using AWS Elastic Beanstalk.
+              </p>
+              <div>
+                <a class="pill-space" target="_blank" href="https://frozen-hollows-69571.herokuapp.com">Live Demo</a>
+                <span class="post-intro"> and </span>
+                <a class="pill-space" target="_blank" href="https://github.com/samkitsheth95/Zipcar">Github</a>
+              </div>
+              <br />
+              <div class="pill">React-Redux</div>
+              <div class="pill">Node</div>
+              <div class="pill">MySql</div>
+              <div class="pill">Bootstrap</div>
+              <div class="pill">AWS Beanstalk</div>
+              <div class="pill">Docker</div>
+              <div class="pill">CSS</div>
+              <div class="pill">HTML</div>
             </div>
           </div>
         </div>
         <div>
           <div class="post">
-            <img class="thumbnail" src="./images/babyYoda.jpg" />
+            <img class="thumbnail" src="./images/datacenter.jpg" />
             <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a senternj.vdfnjvksdfv</p>
-              <a href="#">jkodregt</a>
+              <h6 class="post-title">Distributed Datastore</h6>
+              <p class="post-intro">Built a fast decentralized file storage system using gRPC to allow users to store
+                and retrieve file streams
+                with a configurable replication factor. Implemented the gRPC client side thick load balancing and
+                deployed on AWS EC2.</p>
+              <div>
+                <a target="_blank" href="https://github.com/samkitsheth95/CMPE_275_DataVerse">Github</a>
+              </div>
+              <br />
+              <div class="pill">gRPC</div>
+              <div class="pill">Python</div>
             </div>
           </div>
         </div>
         <div>
           <div class="post">
-            <img class="thumbnail" src="./images/babyYoda.jpg" />
+            <img class="thumbnail" src="./images/starbucks.jpg" />
             <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a senternj.vdfnjvksdfv</p>
-              <a href="#">jkodregt</a>
+              <h6 class="post-title">Starbucks App Terminal Simulation</h6>
+              <p class="post-intro">Developed a terminal simulation of the Starbucks mobile app to depict the eective
+                use of design pattern in
+                Java such as Command, Chain of Responsibility, Observer, Decorator, Composite pattern, Strategy pattern.
+              </p>
+              <div class="pill">Java</div>
+              <div class="pill">Junit</div>
+              <div class="pill">Maven</div>
             </div>
           </div>
         </div>
-      </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="./images/twitter.jpg" />
+            <div class="post-preview">
+              <h6 class="post-title">Twitter Prototype</h6>
+              <p class="post-intro">Developed a distributed Twitter like application with all the primary functionality
+                using MERN stack, incorporated Apache Kafka for high availability and scalability.
+              </p>
+              <div>
+                <a target="_blank" href="https://github.com/samkitsheth95/Twitter-Simulation">Github</a>
+              </div>
+              <br />
+              <div class="pill">React-Redux</div>
+              <div class="pill">Node</div>
+              <div class="pill">MySql</div>
+              <div class="pill">MongoDb</div>
+              <div class="pill">Bootstrap</div>
+              <div class="pill">Apache Kafka</div>
+              <div class="pill">CSS</div>
+              <div class="pill">HTML</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="./images/aqi.jpg" />
+            <div class="post-preview">
+              <h6 class="post-title">Real Time AQI</h6>
+              <p class="post-intro">
+                Getting Air Quality Index (AQI) in real time using raspberry pi4 and SDS011 Sensor.
+                Developed a MERN application to display data in a interactive manner.
+              </p>
+              <div>
+                <a target="_blank" href="https://github.com/samkitsheth95/AQI_IoT">Github</a>
+              </div>
+              <br />
+              <div class="pill">Raspberry Pi</div>
+              <div class="pill">Python</div>
+              <div class="pill">React</div>
+              <div class="pill">Node</div>
+              <div class="pill">MySql</div>
+              <div class="pill">Bootstrap</div>
+              <div class="pill">CSS</div>
+              <div class="pill">HTML</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="./images/indy.png" />
+            <div class="post-preview">
+              <h6 class="post-title">Pride</h6>
+              <p class="post-intro">
+                PrIde (Private Identity) is a system designed to verify your identity with focus on privacy protection.
+                The application will enable user to only reveal part of their identity that is required by the
+                third-party service provider.
+              </p>
+              <div>
+                <a target="_blank" href="https://github.com/samkitsheth95/PrIde">Github</a>
+              </div>
+                  <br />
+                  <div class="pill">Blockchain</div>
+                  <div class="pill">Hyperledger indy</div>
+                  <div class="pill">Angular</div>
+                  <div class="pill">Node</div>
+                  <div class="pill">Bootstrap</div>
+                  <div class="pill">CSS</div>
+                  <div class="pill">HTML</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="./images/grubhub.jpg" />
+                <div class="post-preview">
+                  <h6 class="post-title">Grubhub Prototype</h6>
+                  <p class="post-intro">Developed a distributed Grubhub like application with all the primary
+                    functionality
+                    using MERN stack, incorporated Apache Kafka for high availability and scalability.
+                  </p>
+                  <div class="pill">React-Redux</div>
+                  <div class="pill">Node</div>
+                  <div class="pill">MySql</div>
+                  <div class="pill">MongoDb</div>
+                  <div class="pill">Bootstrap</div>
+                  <div class="pill">Apache Kafka</div>
+                  <div class="pill">CSS</div>
+                  <div class="pill">HTML</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="./images/books.jpg" />
+                <div class="post-preview">
+                  <h6 class="post-title">Intelligible</h6>
+                  <p class="post-intro">
+                    This web-app provides users with a fast and reliable way to rate their content.
+                    It rates content with different tests which are universally recognized.
+                    It can rate for which group(School student or University Graduate) is the content suitable.
+                  </p>
+                  <div class="pill">Flask</div>
+                  <div class="pill">Python</div>
+                  <div class="pill">NLTK</div>
+                  <div class="pill">Bootstrap</div>
+                  <div class="pill">CSS</div>
+                  <div class="pill">HTML</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="./images/tor.png" />
+                <div class="post-preview">
+                  <h6 class="post-title">Raspberry Pi as a Tor Router</h6>
+                  <p class="post-intro">
+                    This project uses a Raspberry Pi and an Ethernet connection to provide anyone with private,
+                    Tor-enabled
+                    browsing.
+                    The Portable Raspberry Pi Tor Router makes it so you can browse the internet anonymously, circumvent
+                    most website blockers.
+                  </p>
+                  <div class="pill">Raspberry Pi</div>
+                  <div class="pill">Tor</div>
+                  <div class="pill">IP Tables</div>
+                  <div class="pill">Raspbin</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="post">
+                <img class="thumbnail" src="./images/memento.png" />
+                <div class="post-preview">
+                  <h6 class="post-title">Memento</h6>
+                  <p class="post-intro">
+                    You can save notes on the app, with the difference being adding a location to the note.
+                    When you are near the location it reminds you that you are near the location with the help of google
+                    maps api.
+                  </p>
+                  <div class="pill">Android Studio</div>
+                  <div class="pill">Google Maps API</div>
+                  <div class="pill">Java</div>
+                </div>
+              </div>
+            </div>
+          </div>
   </section>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
